@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="110px" height="126px" viewBox="0 0 110 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>HTML</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HTML" transform="translate(-8.000000, 0.000000)">
+            <g>
+                <rect id="Container" x="0" y="0" width="126" height="126"></rect>
+                <polygon id="Path" fill="#E44D26" fill-rule="nonzero" points="18.037 112.876 8.032 0.661 117.968 0.661 107.952 112.859 62.933 125.339"></polygon>
+                <polygon id="Path" fill="#F16529" fill-rule="nonzero" points="63 115.8 99.378 105.714 107.937 9.836 63 9.836"></polygon>
+                <path d="M63,51.455 L44.788,51.455 L43.53,37.361 L63,37.361 L63,23.599 L28.489,23.599 L28.819,27.291 L32.201,65.218 L63,65.218 L63,51.455 Z M63,87.198 L62.939,87.215 L47.612,83.075 L46.633,72.1 L32.816,72.1 L34.744,93.709 L62.937,101.535 L63,101.518 L63,87.198 Z" id="Shape" fill="#EBEBEB" fill-rule="nonzero"></path>
+                <path d="M62.952,51.455 L62.952,65.218 L79.899,65.218 L78.302,83.067 L62.952,87.21 L62.952,101.529 L91.167,93.709 L91.374,91.384 L94.608,55.151 L94.943,51.455 L91.235,51.455 L62.952,51.455 Z M62.952,23.599 L62.952,37.361 L96.196,37.361 L96.472,34.269 L97.1,27.291 L97.429,23.599 L62.952,23.599 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

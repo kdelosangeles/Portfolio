@@ -1,22 +1,553 @@
+@font-face {
+  font-family: "WorkSans-ExtraLight";
+  src: url("./Assets/Fonts/WorkSans-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athiti-Bold";
+  src: url("./Assets/Fonts/Athiti-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athiti-Medium";
+  src: url("./Assets/Fonts/Athiti-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athiti-Regular";
+  src: url("./Assets/Fonts/Athiti-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athiti-ExtraLight";
+  src: url("./Assets/Fonts/Athiti-ExtraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Bold";
+  src: url("./Assets/Fonts/WorkSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-ExtraBold";
+  src: url("./Assets/Fonts/WorkSans-ExtraBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-SemiBold";
+  src: url("./Assets/Fonts/WorkSans-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Regular";
+  src: url("./Assets/Fonts/WorkSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url("./Assets/Fonts/WorkSans-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("./Assets/Fonts/WorkSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athiti-SemiBold";
+  src: url("./Assets/Fonts/Athiti-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Thin";
+  src: url("./Assets/Fonts/WorkSans-Thin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athiti-Light";
+  src: url("./Assets/Fonts/Athiti-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans-Black";
+  src: url("./Assets/Fonts/WorkSans-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  padding-top: 100vh;
+  padding-top: calc(var(--vh, 1vh) * 100);
 }
 
-.App-logo {
-  height: 40vmin;
+.container.navigation {
+  position: fixed;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  z-index: 1000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-bar {
+  padding: 24px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.navigation-bar .connect-bar {
+  display: flex;
+  flex-direction: column;
+}
+.navigation-bar .connect-bar a {
+  margin-bottom: 32px;
+}
+
+.navigation-bar .connect-bar img {
+  height: 24px;
+}
+.navigation-bar .connect-bar img:last-of-type {
+  margin-bottom: 0;
+}
+
+.welcome.container {
+  position: fixed;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+}
+
+.welcome .row {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  align-items: flex-end;
+}
+
+.welcome .row h3 {
+  font-family: WorkSans-Bold;
+  font-size: 32px;
+}
+
+.welcome .row h3:last-of-type {
+  margin-bottom: 24px;
+}
+
+.welcome .row p {
+  display: flex;
+  align-items: center;
+  font-family: WorkSans-SemiBold;
+  font-size: 16px;
+}
+.welcome .row p img {
+  margin-left: 16px;
+}
+
+@keyframes scrollAnimaton {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+.welcome .row .scroll-indicator {
+  display: flex;
+  justify-content: flex-end;
+}
+.welcome .row .scroll-indicator img {
+  opacity: 0;
+  animation: scrollAnimaton 2s ease-in-out 2s infinite;
+}
+
+.projects.container {
+  /* position: relative;
+  background-color: #0b0b0b; */
+}
+
+.projects .row {
+  align-items: center;
+}
+
+/* KEEP THE NEXT BUTTON FROM SHIFTING  */
+.projects .row:first-of-type {
+  min-height: 487px;
+}
+
+.projects .project-col {
+  min-height: 517px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.projects .project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.projects .project-details h3 {
+  font-family: Athiti-Medium;
+  font-size: 30px;
+  margin-bottom: 4px;
+}
+.projects .project-details p {
+  font-family: Athiti-Light;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.projects .project-details .area {
+  margin-bottom: 16px;
+}
+
+.project-details .brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-details img {
+  margin-bottom: 24px;
+}
+
+.project-details .underline {
+  width: 100%;
+  height: 4px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+}
+
+.project-details .technologies h3 {
+  margin-bottom: 16px;
+}
+
+.project-details .tech-wrapper img {
+  height: 25px;
+  width: 25px;
+  margin-right: 16px;
+}
+
+.project-details .demo {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-overlay {
+  opacity: 0;
+  height: 100%;
+  background-color: black;
+  width: 100%;
+  z-index: 4;
+  position: absolute;
+}
+
+/* .project-overlay:hover {
+  opacity: 0.5;
+} */
+
+.project-toggle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  cursor: pointer;
+}
+.project-toggle.above {
+  padding-top: 32px;
+  padding-bottom: 50px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.project-toggle .next-project {
+  font-family: WorkSans-SemiBold;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 4px;
+  margin-right: 16px;
+}
+
+.project-toggle .line {
+  width: 80px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.about.container {
+  position: relative;
+  background-color: #0b0b0b;
+}
+
+.about .row {
+  justify-content: center;
+}
+
+.about .intro-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 200px 0 100px 0;
 }
 
-.App-link {
-  color: #09d3ac;
+.about .intro img {
+  height: 80px;
+  margin-bottom: 64px;
+}
+
+.about .intro h3 {
+  font-family: WorkSans-SemiBold;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+
+.about .intro .underline {
+  height: 2px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.about .footer-col {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about .taxi {
+  color: #ffe83c;
+}
+
+.about .skills {
+  display: flex;
+  position: relative;
+  width: 345px;
+  overflow: hidden;
+}
+
+.about .skills {
+  margin-bottom: 8px;
+}
+
+.about .skills .skills-inner-wrapper {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.first {
+  animation: textCycle 35s linear infinite;
+}
+
+.second {
+  position: absolute;
+  left: -100%;
+  animation: textCycle 35s linear infinite;
+}
+
+.first.one {
+  animation: textCycleReverse 35s linear infinite;
+}
+
+.second.two {
+  position: absolute;
+  left: 100%;
+  animation: textCycleReverse 35s linear infinite;
+}
+
+.about .skill {
+  padding: 0 4px;
+  font-family: WorkSans-Light;
+}
+
+@keyframes textCycle {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes textCycleReverse {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.footer-links a {
+  font-family: WorkSans-ExtraLight;
+  font-size: 18px;
+  color: grey;
+  text-align: center;
+  /* ==================== */
+  text-decoration: none;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #ffffff 50%,
+    rgb(126, 126, 126) 50%
+  );
+  background-size: 200% 100%;
+  background-position: 100%;
+}
+
+.footer-links a:hover {
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  background-position: 0%;
+}
+
+/* ===================
+MEDIA QUERIES
+=================== */
+
+@media (min-width: 414px) {
+  .about .intro {
+    padding: 200px 0 150px 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .welcome .row h3 {
+    font-size: 48px;
+  }
+  .welcome .row h3:last-of-type {
+    padding-bottom: 0px;
+  }
+
+  .welcome .row p {
+    display: flex;
+    align-items: center;
+    font-family: WorkSans-SemiBold;
+    font-size: 20px;
+  }
+
+  .projects .project-col {
+    justify-content: center;
+  }
+
+  .about .row {
+    justify-content: center;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .about .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0 300px 0;
+  }
+
+  .about .skills {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .welcome .row h3 {
+    font-size: 60px;
+  }
+
+  .welcome .row p {
+    display: flex;
+    align-items: center;
+    font-family: WorkSans-SemiBold;
+    font-size: 24px;
+  }
+
+  .projects .project-col {
+    min-height: 607px;
+  }
+}
+
+@media (min-width: 992px) {
+  .welcome .row h3 {
+    font-size: 70px;
+  }
+
+  .welcome .row p {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .welcome .row h3:last-of-type {
+    margin-bottom: 56px;
+  }
 }

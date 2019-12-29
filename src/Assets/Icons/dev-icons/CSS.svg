@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="126px" viewBox="0 0 112 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>CSS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CSS" transform="translate(-7.000000, 0.000000)">
+            <g>
+                <rect id="Container" x="0" y="0" width="126" height="126"></rect>
+                <polygon id="Path" fill="#1572B6" fill-rule="nonzero" points="17.814 113.123 7.76 0.352 118.24 0.352 108.176 113.106 62.933 125.649"></polygon>
+                <polygon id="Path" fill="#33A9DC" fill-rule="nonzero" points="63.001 116.062 99.56 105.926 108.161 9.572 63.001 9.572"></polygon>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="63.001 50.429 81.303 50.429 82.567 36.266 63.001 36.266 63.001 22.435 97.683 22.435 97.351 26.146 93.951 64.26 63.001 64.26 63.001 50.429"></polygon>
+                <polygon id="Path" fill="#EBEBEB" fill-rule="nonzero" points="63.083 86.349 63.022 86.367 47.619 82.208 46.634 71.177 32.752 71.177 34.689 92.894 63.02 100.757 63.083 100.739 63.083 86.349"></polygon>
+                <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="80.127 63.675 78.461 82.197 63.035 86.361 63.035 100.751 91.389 92.893 91.597 90.556 94.003 63.675"></polygon>
+                <path d="M63.048,22.435 L63.048,36.266 L29.64,36.266 L29.363,33.158 L28.733,26.146 L28.402,22.435 L63.048,22.435 L63.048,22.435 Z M63.001,50.431 L63.001,64.262 L47.792,64.262 L47.515,61.154 L46.884,54.142 L46.554,50.431 L63.001,50.431 L63.001,50.431 Z" id="Shape" fill="#EBEBEB" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
