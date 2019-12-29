@@ -1,9 +1,5 @@
 ## Available Scripts
 
-In the project directory, you can run:
+This portfolio is being included as an exmaple of my work as well.
 
-### `npm start`
-
-### `npm test`
-
-### `npm run build`
+It was built using the React Framework and animations are developed using the React-Spring Library
