@@ -20,6 +20,8 @@ import react from "../../../Assets/Icons/dev-icons/React.svg";
 import php from "../../../Assets/Icons/dev-icons/PHP.svg";
 import html from "../../../Assets/Icons/dev-icons/HTML.svg";
 import css from "../../../Assets/Icons/dev-icons/CSS.svg";
+import Firebase from "../../../Assets/Icons/dev-icons/Firebase.svg";
+import Redux from "../../../Assets/Icons/dev-icons/Redux.svg";
 
 import Col from "react-bootstrap/Col";
 
@@ -27,7 +29,7 @@ const Project = ({ index, dispatch, visible, clickHandler }) => {
   const projects = [
     {
       name: "Hangar Tarim",
-      url: "www.hangartarim.com",
+      url: "http://www.hangartarim.com",
       type: "Website",
       logo: HangarLogo,
       demo: HangarDemo,
@@ -43,9 +45,9 @@ const Project = ({ index, dispatch, visible, clickHandler }) => {
       logo: BfLogo,
       demo: BfDemo,
       description:
-        "A fashion beauty and lifestyle blog focusing on the daily Struggle of living in NYC and the day to day commute",
+        "An online lifestyle platform based out of NYC, focusing on Style, Fashion, Beauty and Culture",
       roles: ["UX/UI Design", "Project Management", "Front-End Development"],
-      technology: [html, css, Javascript, react, php]
+      technology: [html, css, Javascript, react, Redux, php]
     },
     {
       name: "Bevapp",
@@ -62,7 +64,7 @@ const Project = ({ index, dispatch, visible, clickHandler }) => {
         "Front-End Development",
         "Back-End Development"
       ],
-      technology: [html, css, Javascript, react]
+      technology: [html, css, Javascript, react, Redux, Firebase]
     }
   ];
 

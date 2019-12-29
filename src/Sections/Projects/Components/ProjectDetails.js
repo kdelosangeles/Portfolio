@@ -41,7 +41,6 @@ const ProjectDetails = ({
             </div>,
             <a className="demo" href={url} target="blank">
               <h3>Demo</h3>
-              {console.log(url)}
             </a>
           ][index]
         }
