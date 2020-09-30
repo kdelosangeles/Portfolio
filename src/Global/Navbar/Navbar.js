@@ -7,7 +7,6 @@ import { useMediaQuery } from "react-responsive";
 import ConnectBar from "./Components/ConnectBar";
 import Logo from "../../Assets/Logo/Logo Dark.svg";
 
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -24,8 +23,8 @@ const Navbar = ({ footerVisible, projectsVisible }) => {
   const xs = useMediaQuery({ query: "(max-width: 575px)" });
   const sm = useMediaQuery({ query: "(min-width: 576px)" });
   const md = useMediaQuery({ query: "(min-width: 768px)" });
-  const lg = useMediaQuery({ query: "(min-width: 576px)" });
-  const xl = useMediaQuery({ query: "(min-width: 576px)" });
+  // const lg = useMediaQuery({ query: "(min-width: 576px)" });
+  // const xl = useMediaQuery({ query: "(min-width: 576px)" });
 
   // conditions to show the navbar
   const show = () => {

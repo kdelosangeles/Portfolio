@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 
 import { connect } from "react-redux";
 import { useSpring, animated, useTrail, config, useChain } from "react-spring";
+import axios from "axios";
 
 import design from "../../Assets/Icons/design.svg";
 import developer from "../../Assets/Icons/developer.svg";

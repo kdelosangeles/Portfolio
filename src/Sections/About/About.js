@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { connect } from "react-redux";
-import { useSpring, animated, config } from "react-spring";
 import ReactVisibilitySensor from "react-visibility-sensor";
-import { useMediaQuery } from "react-responsive";
+// import { useMediaQuery } from "react-responsive";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -13,7 +12,7 @@ import Image from "react-bootstrap/Image";
 import Logo from "../../Assets/Logo/Logo Dark.svg";
 
 const About = ({ dispatch, footerVisible }) => {
-  const lg = useMediaQuery({ query: "(min-width: 992px)" });
+  // const lg = useMediaQuery({ query: "(min-width: 992px)" });
 
   const handleChange = e => {
     dispatch({
@@ -38,8 +37,6 @@ const About = ({ dispatch, footerVisible }) => {
       );
     })
   ];
-
-  console.log(footerVisible);
 
   return (
     <Container className="about">

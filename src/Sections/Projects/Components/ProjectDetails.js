@@ -12,7 +12,7 @@ const ProjectDetails = ({
   technology
 }) => {
   const Mappedtech = technology.map(i => {
-    return <img src={i} alt="dev-language" />;
+    return <img src={i} alt="dev-language" key={i} />;
   });
 
   return trail.map((i, index) => {
